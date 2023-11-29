@@ -16,25 +16,39 @@
     <br>
 
     this is not christ wu's site, it's just a site of a person who was named as wuyifan
-</body>
 
 
-<div id="example"></div>
-<script type="text/babel">
-    function tick() {
-      const element = (
-        <div>
-          <h1>now it's {new Date().toLocaleTimeString()}.</h1>
-        </div>
-      );
-      ReactDOM.render(
-        element,
-        document.getElementById('example')
-      );
+
+
+    <div id="example"></div>
+    <script type="text/babel">
+        function tick() {
+          const element = (
+            <div>
+              <h1>now it's {new Date().toLocaleTimeString()}.</h1>
+            </div>
+          );
+          ReactDOM.render(
+            element,
+            document.getElementById('example')
+          );
+        }
+        setInterval(tick, 2);
+    </script>
+
+
+<input type="button" onclick="myFunction()" value="click" /><script>
+    function myFunction(){
+        alert("fuck you");
     }
-    setInterval(tick, 2);
-</script>
+    </script>
 
+
+
+
+
+
+</body>
 
 
 </html>
