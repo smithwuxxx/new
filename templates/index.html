@@ -3,13 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
     <title>Hello World</title>
 </head>
+
+
 <body>
-    Hello
+    <h2>Hello</h2>
 
     <br>
 
     this is not christ wu's site, it's just a site of a person who was named as wuyifan
 </body>
+
+
+<div id="example"></div>
+<script type="text/babel">
+    function tick() {
+      const element = (
+        <div>
+          <h2>now it's {new Date().toLocaleTimeString()}.</h2>
+        </div>
+      );
+      ReactDOM.render(
+        element,
+        document.getElementById('example')
+      );
+    }
+    setInterval(tick, 2);
+</script>
+
+
+
 </html>
